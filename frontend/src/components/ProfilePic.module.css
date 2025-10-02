@@ -1,6 +1,6 @@
 .ProfilePic{
-    width: 16rem;          
-    height: 16rem;         
+    width: 22rem;          
+    height: 22rem;         
     border-radius: 50%;    
     object-fit: cover;     
     border: 4px solid #d1d5db; 
@@ -8,4 +8,12 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); 
     display: block;       
     margin: auto; 
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
 }
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
