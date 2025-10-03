@@ -1,0 +1,35 @@
+.aboutMe {
+    background-color: #001229;   /* dark background */
+    color: white;               /* text shows up on dark */
+    padding: 2rem;              /* space inside the box */
+    margin: 2rem auto;          /* space around the box */
+    text-align: center;         /* centers content */
+    margin-top: 10rem;  
+}
+
+.header{
+    font-family: "Georgia", serif;
+    font-size: 2.2rem;                           
+    text-align: center;    
+}
+
+.message1{
+    font-family: "Georgia", serif;
+    font-size: 1.5rem;                           
+    text-align: center;   
+    margin-top: 4rem;           
+}
+
+.message2{
+    font-family: "Georgia", serif;
+    font-size: 1.5rem;                           
+    text-align: center;   
+    margin-top: 2rem;           
+}
+
+.message3{
+    font-family: "Georgia", serif;
+    font-size: 1.5rem;                           
+    text-align: center;   
+    margin-top: 2rem;           
+}
