@@ -9,13 +9,19 @@ import styles from "./LandingPage.module.css";
 function LandingPage() {
     return (
       <div>
-        <TopBar></TopBar>
+        <TopBar/>
+
+        <div id = "home"></div>
+
         <ProfilePic className={profileStyles.ProfilePic} />
         <h1 className={styles.message}>
-          Hello! I'm <span className={styles.name}>Derek Dao</span>. You can find some of the work I've done here.
-          
+        Hello! I'm <span className={styles.name}>Derek Dao</span>. You can find some of the work I've done here.
         </h1>
-        <AboutMe></AboutMe>
+
+        <section id = "about" className = "aboutSection">
+            <AboutMe/>
+        </section>
+
       </div>
     );
   }

@@ -1,23 +1,35 @@
 import React from "react";
 import styles from "./TopBar.module.css";
 
-function TopBar(){
-
+function TopBar() {
     const sections = ["Home", "About", "Projects", "Contact"];
-
+  
+    const handleScrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  
     return (
-        <nav className={styles.TopBar}>
-          <ul className={styles.navList}>
-            {sections.map((section) => (
-              <li key={section} className={styles.navItem}>
-                <a href={`#${section.toLowerCase()}`} className={styles.navLink}>
+      <nav className={styles.TopBar}>
+        <ul className={styles.navList}>
+          {sections.map((section) => (
+            <li key={section} className={styles.navItem}>
+              {section === "Home" ? (
+                <a onClick={handleScrollToTop} className={styles.navLink}>
                   {section}
                 </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      );
-}
+              ) : (
+                <a
+                  href={`#${section.toLowerCase()}`}
+                  className={styles.navLink}
+                >
+                  {section}
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+    );
+  }
 
 export default TopBar;

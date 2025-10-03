@@ -17,7 +17,9 @@
     padding: 0;
   }
   
-  .navItem { }
+  .navItem {
+    display: inline;
+  }
   
   .navLink {
     font-size: 18px;
@@ -25,9 +27,10 @@
     text-decoration: none;
     color: #333;
     transition: color 0.2s ease-in-out;
+    cursor: pointer;
   }
   
   .navLink:hover {
-    color: #06BF83; /* blue hover */
+    color: #06BF83; 
   }
   
