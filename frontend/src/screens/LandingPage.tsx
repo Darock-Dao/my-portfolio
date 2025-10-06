@@ -2,6 +2,7 @@ import React from "react";
 import ProfilePic from "../components/ProfilePic"
 import TopBar from "../components/TopBar"
 import AboutMe from "../components/AboutMe"
+import Projects from "../components/Projects"
 import profileStyles from "../components/ProfilePic.module.css";
 import styles from "./LandingPage.module.css"; 
 
@@ -19,7 +20,11 @@ function LandingPage() {
         </h1>
 
         <section id = "about" className = "aboutSection">
-            <AboutMe/>
+          <AboutMe/>
+        </section>
+
+        <section>
+          <Projects/>
         </section>
 
       </div>
