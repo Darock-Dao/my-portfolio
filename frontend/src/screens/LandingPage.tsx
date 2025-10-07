@@ -23,7 +23,7 @@ function LandingPage() {
           <AboutMe/>
         </section>
 
-        <section>
+        <section id = "projects" className = "projectSection">
           <Projects/>
         </section>
 
