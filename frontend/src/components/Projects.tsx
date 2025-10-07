@@ -9,24 +9,14 @@ function Projects(){
             <p className={styles.subtext}>I love bringing my silly ideas to life. Check out some of my favorite works below!</p>
             <div className={styles.projectsGrid}>
                 <ProjectBox
-                title="Fabflix"
-                description="Full-stack movie browsing site"
-                link="https://github.com/yourusername/fabflix"
-                />
-                <ProjectBox
                 title="Envision"
                 description="Hand gesture recognition library"
-                link="https://github.com/yourusername/envision"
+                link="https://yasper.me/envision"
                 />
                 <ProjectBox
-                title="Structured Light 3D"
-                description="Stereo vision reconstruction"
-                link="https://github.com/yourusername/structured-light"
-                />
-                <ProjectBox
-                title="Minesweeper AI"
-                description="Smart puzzle solver"
-                link="https://github.com/yourusername/minesweeper-ai"
+                title="Kababayan"
+                description="Connect with your local Filipino community"
+                link="https://devpost.com/software/kababayan"
                 />
             </div>
         </div>
