@@ -1,8 +1,6 @@
-import React from "react";
-import profilePic from "../assets/profile.jpg"
-import styles from "./ProfilePic.module.css"
+import profilePic from "../assets/profile.jpg";
 
-interface ProfilePicProps{
+interface ProfilePicProps {
     className?: string;
 }
 
@@ -14,6 +12,6 @@ function ProfilePic({ className }: ProfilePicProps) {
         className={`${className || ""}`}
       />
     );
-  }
+}
 
-export default ProfilePic
+export default ProfilePic;

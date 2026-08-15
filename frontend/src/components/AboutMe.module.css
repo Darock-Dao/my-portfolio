@@ -1,35 +1,107 @@
 .aboutMe {
     background-color: #001229;   /* dark background */
     color: white;               /* text shows up on dark */
-    padding: 2rem;              /* space inside the box */
-    margin: 2rem auto;          /* space around the box */
-    text-align: center;         /* centers content */
-    margin-top: 8rem;  
+    padding: 4rem 2rem;         /* space inside the section */
+    margin: 8rem auto 2rem;     /* space around the section */
 }
 
-.header{
+.header {
     font-family: "Georgia", serif;
-    font-size: 4rem;                           
-    text-align: center;    
+    font-size: 3.5rem;                           
+    text-align: center;
+    margin-bottom: 3.5rem;
 }
 
-.message1{
-    font-family: "Georgia", serif;
-    font-size: 1.5rem;                           
-    text-align: center;   
-    margin-top: 4rem;           
+.contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.message2{
-    font-family: "Georgia", serif;
-    font-size: 1.5rem;                           
-    text-align: center;   
-    margin-top: 2rem;           
+.textColumn {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
 }
 
-.message3{
+.message {
     font-family: "Georgia", serif;
-    font-size: 1.5rem;                           
-    text-align: center;   
-    margin-top: 2rem;           
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #f3f4f6;
+    margin: 0;
+}
+
+.imageColumn {
+    flex: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutImage {
+    width: 100%;
+    max-width: 380px;
+    height: 440px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+    border: 3px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutImage:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 992px) {
+    .contentContainer {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .textColumn {
+        text-align: left;
+    }
+
+    .header {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .aboutImage {
+        max-width: 340px;
+        height: 380px;
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 600px) {
+    .aboutMe {
+        padding: 3rem 1.25rem;
+        margin-top: 4rem;
+    }
+
+    .header {
+        font-size: 2.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .message {
+        font-size: 1.05rem;
+        line-height: 1.65;
+    }
+
+    .aboutImage {
+        max-width: 280px;
+        height: 320px;
+    }
 }

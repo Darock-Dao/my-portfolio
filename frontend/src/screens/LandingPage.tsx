@@ -1,4 +1,3 @@
-import React from "react";
 import ProfilePic from "../components/ProfilePic"
 import TopBar from "../components/TopBar"
 import AboutMe from "../components/AboutMe"
@@ -6,7 +5,6 @@ import Projects from "../components/Projects"
 import SocialLinks from "../components/SocialLinks";
 import profileStyles from "../components/ProfilePic.module.css";
 import styles from "./LandingPage.module.css"; 
-
 
 function LandingPage() {
     return (

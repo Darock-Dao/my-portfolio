@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "./Projects.module.css"
+import styles from "./Projects.module.css";
 import ProjectBox from "./ProjectBox";
 
 function Projects(){
@@ -23,4 +22,4 @@ function Projects(){
     )
 }
 
-export default Projects
+export default Projects;

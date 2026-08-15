@@ -1,10 +1,10 @@
-import React from "react";
+import type { ReactNode } from "react";
 import styles from "./SocialLinks.module.css";
 
 interface SocialItem {
   name: string;
   url: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
 }
 
 const socials: SocialItem[] = [

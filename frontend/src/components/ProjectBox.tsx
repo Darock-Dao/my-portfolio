@@ -1,8 +1,8 @@
-import React from "react";
+import type { ReactNode } from "react";
 import styles from "./ProjectBox.module.css";
 
 interface ProjectBoxProps {
-  icon?: React.ReactNode;    // you can pass in an icon component or emoji
+  icon?: ReactNode;    // you can pass in an icon component or emoji
   title: string;
   description: string;
   link: string;
