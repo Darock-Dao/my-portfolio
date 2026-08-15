@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./TopBar.module.css";
 
 function TopBar() {
-    const sections = ["Home", "About", "Projects", "Contact"];
+    const sections = ["Home", "About", "Experience", "Projects", "Contact"];
   
     const handleScrollToTop = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
