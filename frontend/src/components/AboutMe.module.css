@@ -6,7 +6,7 @@
 }
 
 .header {
-    font-family: "Georgia", serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 3.5rem;                           
     text-align: center;
     margin-bottom: 3.5rem;
@@ -30,7 +30,7 @@
 }
 
 .message {
-    font-family: "Georgia", serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.25rem;
     line-height: 1.8;
     color: #f3f4f6;
