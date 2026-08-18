@@ -6,7 +6,7 @@ function AboutMe() {
   "Growing up, I spent countless late nights playing sandbox games like Minecraft and Roblox, following tutorials to build all kinds of contraptions. I didn’t realize it then, but those hours were my first lessons in logic, engineering, and creativity. I try to carry that same curiosity into everything I build.";
 
 const message2 =
-  "I’m based in Orange County, California, and graduated from UC Irvine with a B.S. in Computer Science & Engineering. I’m a software developer with a background in industrial automation, building end-to-end machine control software from the HMI and application layer to hardware and PLC integration.";
+  "I’m based in Orange County, California, and graduated from UC Irvine with a B.S. in Computer Science & Engineering. I’m a software developer with a background in full-stack development and industrial automation.";
 
 const message3 =
   "Outside of work, I enjoy video games, rock climbing, cosplay, and spending time with friends!";
