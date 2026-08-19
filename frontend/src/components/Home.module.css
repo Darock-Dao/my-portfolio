@@ -1,0 +1,51 @@
+/* Base animation shared or separate */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;          
+    text-align: center;
+    margin-top: 1.5rem;          /* Closer to profile picture */
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.message{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;                           
+    text-align: center;            
+    margin-top: 3rem;  
+    opacity: 0;
+    transform: translateY(40px);  
+    animation: slideUp 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.name{
+    color: #06BF83;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);  /* move to normal position */
+    }
+}

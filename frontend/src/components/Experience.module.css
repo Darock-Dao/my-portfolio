@@ -1,0 +1,27 @@
+.experience {
+    padding: 4rem 2rem;         /* space inside the section */
+    /* margin: 8rem auto 2rem;     space around the section */
+}
+
+.header {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;                           
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0.8rem;
+    right: -0.5rem;
+    width: 75%;
+    height: 1rem;
+    background-color: #06BF83;
+    z-index: -1;
+}
