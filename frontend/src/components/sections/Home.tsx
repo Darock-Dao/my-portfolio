@@ -1,7 +1,7 @@
 import styles from "./Home.module.css";
-import ProfilePic from "./ProfilePic";
-import SocialLinks from "./SocialLinks";
-import profileStyles from "./ProfilePic.module.css";
+import ProfilePic from "../ProfilePic";
+import SocialLinks from "../SocialLinks";
+import profileStyles from "../ProfilePic.module.css";
 
 function Home(){
 
@@ -15,7 +15,7 @@ function Home(){
             <SocialLinks />
 
             <h2 className={styles.message}>
-            Hello, I'm <span className={styles.name}>Derek Dao</span>. Welcome to my portfolio!
+            Hello, I'm <span className={styles.name}>Derek Dao</span>. Welcome to my developer portfolio!
             </h2>
         </div>
     );

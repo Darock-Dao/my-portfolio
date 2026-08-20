@@ -1,9 +1,9 @@
 import TopBar from "../components/TopBar"
-import Home from "../components/Home"
-import AboutMe from "../components/AboutMe"
-import Experience from "../components/Experience"
-import Projects from "../components/Projects"
-import Contact from "../components/Contact"
+import Home from "../components/sections/Home"
+import AboutMe from "../components/sections/AboutMe"
+import Experience from "../components/sections/Experience"
+import Projects from "../components/sections/Projects"
+import Contact from "../components/sections/Contact"
 
 function LandingPage() {
     return (

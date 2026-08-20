@@ -1,5 +1,5 @@
 import styles from "./Projects.module.css";
-import ProjectBox from "./ProjectBox";
+import ProjectBox from "../ProjectBox";
 
 function Projects(){
     return(

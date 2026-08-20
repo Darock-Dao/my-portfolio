@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import styles from "./AboutMe.module.css";
-import img0 from "../assets/carousel_images/image0.jpg";
-import img1 from "../assets/carousel_images/IMG_6678.jpg";
-import img2 from "../assets/carousel_images/801670022.190734.jpg";
-import img3 from "../assets/carousel_images/image.png";
+import img0 from "../../assets/carousel_images/image0.jpg";
+import img1 from "../../assets/carousel_images/IMG_6678.jpg";
+import img2 from "../../assets/carousel_images/801670022.190734.jpg";
+import img3 from "../../assets/carousel_images/image.png";
 
 const images = [
     { src: img0, alt: "Derek Dao photo 1" },
