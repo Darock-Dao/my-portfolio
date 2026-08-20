@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import styles from "./ExperienceBox.module.css";
 
 interface ExperienceBoxProps {
+  logo?: string;
   icon?: ReactNode;
   company: string;
   role: string;
@@ -9,7 +10,7 @@ interface ExperienceBoxProps {
   onClick?: () => void;
 }
 
-function ExperienceBox({ icon, company, role, isActive = false, onClick }: ExperienceBoxProps) {
+function ExperienceBox({ logo, icon, company, role, isActive = false, onClick }: ExperienceBoxProps) {
   return (
     <div
       className={`${styles.box} ${isActive ? styles.active : ""}`}
@@ -24,7 +25,9 @@ function ExperienceBox({ icon, company, role, isActive = false, onClick }: Exper
       }}
     >
       <div className={styles.iconWrapper}>
-        {icon ? (
+        {logo ? (
+          <img src={logo} alt={`${company} logo`} className={styles.companyLogo} />
+        ) : icon ? (
           icon
         ) : (
           <div className={styles.placeholderIcon}>

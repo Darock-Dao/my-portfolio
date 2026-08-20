@@ -1,4 +1,5 @@
 import TopBar from "../components/TopBar"
+import ParticleBackground from "../components/ParticleBackground"
 import Home from "../components/sections/Home"
 import AboutMe from "../components/sections/AboutMe"
 import Experience from "../components/sections/Experience"
@@ -8,6 +9,7 @@ import Contact from "../components/sections/Contact"
 function LandingPage() {
     return (
       <div>
+        <ParticleBackground />
         <TopBar/>
 
         <section id = "home" className = "homeSection">

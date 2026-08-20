@@ -46,6 +46,13 @@
   overflow: hidden;
 }
 
+.companyLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .placeholderIcon {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
