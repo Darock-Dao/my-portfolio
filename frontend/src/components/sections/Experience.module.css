@@ -1,6 +1,6 @@
 .experience {
-    padding: 4rem 2rem;         /* space inside the section */
-    /* margin: 8rem auto 2rem;     space around the section */
+    padding: 4rem 2rem;
+    margin: 8rem auto 2rem;
 }
 
 .header {
@@ -24,4 +24,183 @@
     height: 1rem;
     background-color: #06BF83;
     z-index: -1;
+}
+
+.contentContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.experienceBoxColumn {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.experienceDescriptionColumn {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.35s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.roleHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1.5px solid #f1f5f9;
+    padding-bottom: 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.roleTitleGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.roleTitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    color: #1f2937;
+}
+
+.companyName {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: #06BF83;
+}
+
+.metaGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
+.period {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.location {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.descriptionText {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #374151;
+    margin: 0;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.skillTag {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    background-color: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 992px) {
+    .contentContainer {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .header {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .metaGroup {
+        align-items: flex-start;
+    }
+
+    .experienceDescriptionColumn {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 600px) {
+    .experience {
+        padding: 3rem 1.25rem;
+        margin-top: 4rem;
+    }
+
+    .header {
+        font-size: 2.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .roleTitle {
+        font-size: 1.3rem;
+    }
+
+    .companyName {
+        font-size: 1.1rem;
+    }
+
+    .descriptionText {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .experienceDescriptionColumn {
+        padding: 1.5rem 1.25rem;
+    }
 }

@@ -1,0 +1,90 @@
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  border: 1.5px solid #e2e8f0;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  width: 100%;
+  max-width: 380px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease-in-out;
+  gap: 1.25rem;
+  box-sizing: border-box;
+}
+
+.box:hover {
+  transform: translateY(-3px);
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+
+.active {
+  border-color: #06BF83;
+  box-shadow: 0 6px 18px rgba(6, 191, 131, 0.18);
+  background-color: #f7fdfb;
+}
+
+.active:hover {
+  border-color: #06BF83;
+  transform: translateY(-3px);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 10px;
+  background-color: #f1f5f9;
+  font-size: 1.4rem;
+  overflow: hidden;
+}
+
+.placeholderIcon {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  color: #06BF83;
+  font-size: 1.3rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  overflow: hidden;
+}
+
+.company {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.role {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+  color: #64748b;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .box {
+    max-width: 100%;
+    padding: 1rem 1.25rem;
+  }
+}
