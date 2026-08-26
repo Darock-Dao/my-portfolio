@@ -27,9 +27,10 @@ const experiences: ExperienceItem[] = [
     paragraphs: [
       "Worked on industrial automation software, developing intuitive HMI interfaces and high-reliability machine control systems.",
       "Engineered full-stack features to interface directly with PLC hardware and robotic peripherals, optimizing data acquisition and diagnostics.",
+      "Developed an enterprise time-tracking web application with Next.js, PostgreSQL, and Docker, with role-based access, PTO management, and attendance reporting.",
       "Collaborated with cross-functional engineering teams to validate machine logic, deploy code to physical systems, and improve operational uptime."
     ],
-    skills: [".NET", "Visual Basic", "C#", "C++", "PLC Ladder Logic", "SQL", "REST APIs", "Embedded Software", "Git"]
+    skills: [".NET", "Visual Basic", "C#", "C++", "Next.js","TypeScript", "PLC Ladder Logic", "SQL", "REST APIs", "Embedded Software", "Docker", "Git"]
   },
   {
     id: 1,
