@@ -1,19 +1,14 @@
-import type { ReactNode } from "react";
 import styles from "./ProjectBox.module.css";
 
-interface ProjectBoxProps {
-  icon?: ReactNode;    // you can pass in an icon component or emoji
-  title: string;
-  description: string;
+export interface ProjectBoxProps {
+  image: string;
   link: string;
 }
 
-function ProjectBox({ icon, title, description, link }: ProjectBoxProps) {
+function ProjectBox({ image, link }: ProjectBoxProps) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" className={styles.box}>
-      <div className={styles.icon}>{icon}</div>
-      <h3 className={styles.title}>{title}</h3>
-      <p className={styles.description}>{description}</p>
+      <img src={image} alt="" className={styles.image} />
     </a>
   );
 }

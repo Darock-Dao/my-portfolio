@@ -1,11 +1,11 @@
-.container{
+.container {
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
 
-.header{
+.header {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 4rem; 
+    font-size: 4rem;
     text-align: center;
     margin-bottom: 3.5rem;
     position: relative;
@@ -25,19 +25,20 @@
     z-index: -1;
 }
 
-.subtext{
+.subtext {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 2rem; 
+    font-size: 2rem;
     margin-left: 6rem;
     margin-right: 6rem;
-    text-align:center;
+    text-align: center;
 }
 
 .projectsGrid {
-    display: grid;
+    display: list-item;
     grid-template-columns: repeat(3, max-content);
     justify-content: center;
-    column-gap: 48px; /* now this actually works */
+    column-gap: 48px;
+    /* now this actually works */
     row-gap: 48px;
     margin-top: 2rem;
-  }
+}
