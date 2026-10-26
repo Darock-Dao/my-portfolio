@@ -2,6 +2,7 @@ import styles from "./Projects.module.css";
 import ProjectCard from "../ProjectCard";
 import envisionScreenshot from "../../assets/envision-1.jpg"
 import kababayanScreenshot from "../../assets/kababayan-1.png"
+import creatorPulseScreenshot from "../../assets/creatorpulse-1.png"
 
 function Projects() {
     return (
@@ -24,6 +25,15 @@ function Projects() {
                     projectbox={{
                         image: kababayanScreenshot,
                         link: "https://devpost.com/software/kababayan"
+                    }}
+                />
+
+                <ProjectCard
+                    title="Creator Pulse"
+                    description="Real-time YouTube video view velocity tracking pipeline"
+                    projectbox={{
+                        image: creatorPulseScreenshot,
+                        link: "https://github.com/Darock-Dao/creator-pulse-duckdb"
                     }}
                 />
 
