@@ -30,7 +30,7 @@ function Projects() {
 
                 <ProjectCard
                     title="Creator Pulse"
-                    description="Real-time YouTube video view velocity tracking pipeline"
+                    description="Real-time YouTube video view velocity tracking pipeline. See my GitHub for a Snowflake and DuckDB version!"
                     projectbox={{
                         image: creatorPulseScreenshot,
                         link: "https://github.com/Darock-Dao/creator-pulse-duckdb"
