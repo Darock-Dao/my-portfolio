@@ -33,9 +33,9 @@ function Contact() {
 
             setStatus("success");
             (e.target as HTMLFormElement).reset();
-        } catch (error: any) {
+        } catch (error: unknown) {
             setStatus("error");
-            setErrorMessage(error.message);
+            setErrorMessage(error instanceof Error ? error.message : "Failed to send email");
         }
     };
 
@@ -43,7 +43,7 @@ function Contact() {
         <div className={styles.contact}>
             <h2 className={styles.header}>Contact Me</h2>
             <p className={styles.message}>
-                Want to get in touch? Send me an email and I'll respond as soon as possible.
+                Want to get in touch? Send me an email and I'll respond as soon as&nbsp;possible.
             </p>
 
             <form className={styles.formContainer} onSubmit={handleSubmit}>
